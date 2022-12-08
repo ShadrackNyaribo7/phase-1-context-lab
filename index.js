@@ -8,6 +8,17 @@
  As a result, the lessons for this function will pass *and* it will be available
  for you to use if you need it!
  */
+ function createEmployeeRecord (firstname,familyname,title,payrateperhour){
+    employee = {};
+    employee.firstname = firstname;
+    employee.familyname = familyname;
+    employee.title = title;
+    employee.payrateperhour = payrateperhour;
+    employee.timeInEvents = timeInEvents;
+    employee.timeOutEvents = timeOutEvents;
+    return employee;
+    
+    }
 
 const allWagesFor = function () {
     const eligibleDates = this.timeInEvents.map(function (e) {
